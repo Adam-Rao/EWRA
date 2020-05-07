@@ -1,6 +1,9 @@
 package com.kareh.ewraapp
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -22,5 +25,26 @@ class HomeActivity : AppCompatActivity() {
                 R.id.navigation_home, R.id.shopFragment, R.id.mobileFragment))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        MenuInflater(this).inflate(R.menu.main_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when(item.itemId) {
+            R.id.about -> {
+                //TODO
+                true
+            }
+
+            R.id.settings -> {
+                //TODO
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }
