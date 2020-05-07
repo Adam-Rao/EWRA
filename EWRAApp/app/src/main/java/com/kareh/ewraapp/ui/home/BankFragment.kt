@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.kareh.ewraapp.R
 
-class HomeFragment : Fragment() {
+class BankFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var bankViewModel: BankViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
+        bankViewModel =
+                ViewModelProviders.of(this).get(BankViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_bank, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        bankViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
