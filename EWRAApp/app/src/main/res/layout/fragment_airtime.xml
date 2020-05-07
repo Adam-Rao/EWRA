@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AirtimeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="406dp"
+            android:layout_height="250dp"
+            android:background="@color/colorAccent"
+
+            android:src="@drawable/airitime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rg_airtime"
+            android:layout_width="410dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="48dp"
+            android:background="#f2f2f2"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <RadioButton
+                android:id="@+id/rbt_Airtel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/airtel"
+                android:textColor="#ff0000" />
+
+            <RadioButton
+                android:id="@+id/rbt_safaricom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/safaricom"
+                android:textColor="#00ff00" />
+
+            <RadioButton
+                android:id="@+id/rbt_telkom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/telkom"
+                android:textColor="#00ffff" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/airtime_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/phone_number"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_airtime" />
+
+        <EditText
+            android:id="@+id/airtime_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/amount"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/airtime_phone_number"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/airtime_phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/airtime_phone_number" />
+
+        <Button
+            android:id="@+id/submit_airtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+
+            android:background="@drawable/btn_rounded"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/airtime_amount"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/airtime_amount"
+            app:layout_constraintTop_toBottomOf="@+id/airtime_amount"
+            app:layout_constraintVertical_bias="0.313" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
