@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">EWRA App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_text">Members login</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login_btn_txt">Login</string>
+    <string name="amount">Amount</string>
+    <string name="pin">Pin</string>
+    <string name="submit">Submit</string>
+    <string name="airtel">Airtel</string>
+    <string name="safaricom">Safaricom</string>
+    <string name="telkom">Telkom</string>
 </resources>
