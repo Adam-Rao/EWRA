@@ -8,28 +8,16 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.kareh.ewraapp.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/bank_transactions"
         tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.kareh.ewraapp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.kareh.ewraapp.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/shopFragment"
         android:name="com.kareh.ewraapp.ShopFragment"
-        android:label="fragment_shop"
+        android:label="@string/shop_transactions"
         tools:layout="@layout/fragment_shop" />
     <fragment
         android:id="@+id/mobileFragment"
         android:name="com.kareh.ewraapp.MobileFragment"
-        android:label="fragment_mobile"
+        android:label="@string/mobile_transactions"
         tools:layout="@layout/fragment_mobile" />
 </navigation>

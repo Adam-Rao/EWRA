@@ -18,4 +18,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="bank">Bank</string>
+    <string name="shop">Shop</string>
+    <string name="mobile">Mobile</string>
+    <string name="bank_transactions">Bank Transactions</string>
+    <string name="shop_transactions">Shop Transactions</string>
+    <string name="mobile_transactions">Mobile Transactions</string>
 </resources>
