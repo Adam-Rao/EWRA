@@ -12,4 +12,6 @@
     <string name="airtel">Airtel</string>
     <string name="safaricom">Safaricom</string>
     <string name="telkom">Telkom</string>
+    <string name="mobile_banking_login">Mobile Banking</string>
+    <string name="ewra_login_txt">EWRA</string>
 </resources>
