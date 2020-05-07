@@ -14,4 +14,6 @@
     <string name="telkom">Telkom</string>
     <string name="mobile_banking_login">Mobile Banking</string>
     <string name="ewra_login_txt">EWRA</string>
+    <string name="till_number">Till Number</string>
+    <string name="buy_goods_with_mpesa">Buy Goods With Mpesa</string>
 </resources>
