@@ -22,4 +22,14 @@
         android:name="com.kareh.ewraapp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.kareh.ewraapp.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/mobileFragment"
+        android:name="com.kareh.ewraapp.MobileFragment"
+        android:label="fragment_mobile"
+        tools:layout="@layout/fragment_mobile" />
 </navigation>
