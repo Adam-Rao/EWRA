@@ -1,4 +1,4 @@
-package com.kareh.ewraapp.ui.home
+package com.kareh.ewraapp.ui.bank
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

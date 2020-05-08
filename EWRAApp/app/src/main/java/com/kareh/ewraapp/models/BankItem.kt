@@ -1,3 +1,3 @@
 package com.kareh.ewraapp.models
 
-data class BankItem(private val imagePath: String, private val cardText: String)
+data class BankItem(val imageRes: Int, val cardText: String)

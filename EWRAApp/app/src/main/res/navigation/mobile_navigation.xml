@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/navigation_bank"
-        android:name="com.kareh.ewraapp.ui.home.BankFragment"
+        android:name="com.kareh.ewraapp.ui.bank.BankFragment"
         android:label="@string/bank_transactions"
         tools:layout="@layout/fragment_bank" />
     <fragment
         android:id="@+id/shopFragment"
-        android:name="com.kareh.ewraapp.ShopFragment"
+        android:name="com.kareh.ewraapp.ui.shop.ShopFragment"
         android:label="@string/shop_transactions"
         tools:layout="@layout/fragment_shop" />
     <fragment
         android:id="@+id/mobileFragment"
-        android:name="com.kareh.ewraapp.MobileFragment"
+        android:name="com.kareh.ewraapp.ui.mobile.MobileFragment"
         android:label="@string/mobile_transactions"
         tools:layout="@layout/fragment_mobile" />
 </navigation>
