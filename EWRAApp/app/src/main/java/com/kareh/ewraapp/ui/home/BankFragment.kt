@@ -22,10 +22,6 @@ class BankFragment : Fragment() {
         bankViewModel =
                 ViewModelProviders.of(this).get(BankViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_bank, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        bankViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
         return root
     }
 }
