@@ -3,4 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.mobile.MobileFragment"/>
+    tools:context=".ui.mobile.MobileFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_mobileFragment"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/mobile_rv_item" />
+</FrameLayout>
