@@ -10,50 +10,85 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="320dp"
-            android:layout_height="298dp"
-            android:src="@drawable/airitime"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/till_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
 
-        <EditText
-            android:id="@+id/till_amount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.545"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/till_number" />
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/till_amount"
-            app:layout_constraintVertical_bias="0.287" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:text="@string/buy_goods_with_mpesa"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@android:color/white" />
+                 <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_action_name"
+               />
+                </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/till_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:ems="10"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:inputType="textPersonName"
+                android:hint="@string/till_number"
+                android:gravity="center"
+                />
+
+                <EditText
+                    android:id="@+id/till_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:inputType="number|textPersonName"
+                    android:text="@string/amount"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+
+            <Button
+                android:id="@+id/till_submit"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginBottom="44dp"
+                android:background="@android:color/white"
+                android:textColor="@color/colorAccent"
+                android:text="@string/submit"
+                 />
+            </LinearLayout>
+
+        </ScrollView>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
