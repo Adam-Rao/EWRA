@@ -32,5 +32,7 @@
     <string name="buy_goods_with_mpesa">Buy Goods With Mpesa</string>
     <string name="business_number">Business Number</string>
     <string name="bill_account_number">Account Number</string>
+    <string name="bank_card_icon">bank recyclerview card icon</string>
+    <string name="card_placeholder_text">Card Title</string>
 
 </resources>
