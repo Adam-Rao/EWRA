@@ -16,4 +16,6 @@
     <string name="ewra_login_txt">EWRA</string>
     <string name="till_number">Till Number</string>
     <string name="buy_goods_with_mpesa">Buy Goods With Mpesa</string>
+    <string name="business_number">Business Number</string>
+    <string name="bill_account_number">Account Number</string>
 </resources>
