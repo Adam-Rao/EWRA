@@ -34,5 +34,6 @@
     <string name="bill_account_number">Account Number</string>
     <string name="bank_card_icon">bank recyclerview card icon</string>
     <string name="card_placeholder_text">Card Title</string>
+    <string name="logout">LogOut</string>
 
 </resources>
