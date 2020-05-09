@@ -30,7 +30,7 @@ class BankFragmentAdapter(private val items: MutableList<BankItem>) : RecyclerVi
     override fun onBindViewHolder(holder: BankFragmentAdapterViewHolder, position: Int) {
         val item = items[position]
         holder.cardText.text = item.cardText
-        Picasso.get().load(item.imageRes).into(holder.cardImage)
+        Picasso.get().load(item.imageRes).fit().into(holder.cardImage)
     }
 
 }

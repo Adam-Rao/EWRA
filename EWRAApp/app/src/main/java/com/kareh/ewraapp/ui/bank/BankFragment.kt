@@ -26,22 +26,13 @@ class BankFragment : Fragment() {
         bankViewModel =
                 ViewModelProviders.of(this).get(BankViewModel::class.java)
 
-        items = loadDetailsToList()
+        items = bankViewModel.loadDetailsToList()
 
         val root = inflater.inflate(R.layout.fragment_bank, container, false)
         recyclerView = root.findViewById(R.id.rv_bankFragment)
-        recyclerView.hasFixedSize()
         val adapter = BankFragmentAdapter(items)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(root.context)
         return root
-    }
-
-    private fun loadDetailsToList(): MutableList<BankItem> {
-        val details: MutableList<BankItem> = mutableListOf()
-        details.add(BankItem(R.drawable.bank_card, "Withdraw"))
-        details.add(BankItem(R.drawable.balance, "Check Balance"))
-        details.add(BankItem(R.drawable.transfer, "Transfer Money"))
-        return details
     }
 }
