@@ -3,6 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/action_logout"
+        android:icon="@android:drawable/ic_menu_revert"
+        android:title="@string/logout"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/settings"
         android:title="@string/settings" />
     <item
