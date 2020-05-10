@@ -35,5 +35,7 @@
     <string name="bank_card_icon">bank recyclerview card icon</string>
     <string name="card_placeholder_text">Card Title</string>
     <string name="logout">LogOut</string>
+    <string name="airtime_amount">Airtime Amount</string>
+    <string name="amount_to_send">Amount To Send</string>
 
 </resources>
