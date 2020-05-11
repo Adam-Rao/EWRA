@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.VerifyActivity"></activity>
+        <activity android:name=".ui.BuyGoods" />
+        <activity android:name=".ui.BillActivity" />
+        <activity android:name=".ui.SendToMpesa" />
+        <activity android:name=".ui.BuyAirtime" />
+        <activity android:name=".ui.VerifyActivity" />
         <activity
             android:name=".ui.HomeActivity"
             android:label="@string/title_activity_home" />
@@ -20,6 +24,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".TransactionReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="app.package.name.CONFIRMED_TRANSACTION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.hover.ApiKey"
+            android:value="85db694bb9c786c869aea862ca28a9c0" />
     </application>
 
 </manifest>
