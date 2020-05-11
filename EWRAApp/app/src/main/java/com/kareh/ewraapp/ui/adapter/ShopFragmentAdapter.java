@@ -3,6 +3,7 @@ package com.kareh.ewraapp.ui.adapter;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +18,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.kareh.ewraapp.R;
 import com.kareh.ewraapp.models.ShopItem;
+import com.kareh.ewraapp.ui.BillActivity;
+import com.kareh.ewraapp.ui.BuyGoods;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -62,7 +65,14 @@ public class ShopFragmentAdapter extends RecyclerView.Adapter<ShopFragmentAdapte
             Log.d(TAG, "onClick: Recyclerview onclick works");
             int itemPosition = getAdapterPosition();
             ShopItem item = items.get(itemPosition);
-            AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());
+            if (item.getCardText().equals("Buy Goods With Mpesa")){
+                Intent buygoods_intent=new Intent(v.getContext(), BuyGoods.class);
+                v.getContext().startActivity(buygoods_intent);}
+            else if(item.getCardText().equals("PayBill")){
+                Intent paybill_intent=new Intent(v.getContext(), BillActivity.class);
+                v.getContext().startActivity(paybill_intent);
+            }
+           /* AlertDialog.Builder alertDialog = new AlertDialog.Builder(v.getContext());
             if (item.getCardText().equals(v.getContext().getResources().getString(R.string.buy_goods_with_mpesa))) {
                 View layout = LayoutInflater.from(v.getContext()).inflate(R.layout.layout_buy_goods, null);
                 alertDialog.setTitle(v.getContext().getResources().getString(R.string.buy_goods_with_mpesa));
@@ -93,7 +103,7 @@ public class ShopFragmentAdapter extends RecyclerView.Adapter<ShopFragmentAdapte
                     Log.d(TAG, "onClick: It works");
                 });
             }
-            alertDialog.show();
+            alertDialog.show();*/
         }
     }
 }
